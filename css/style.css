@@ -1,0 +1,74 @@
+/*reset css*/
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    width: 100%;
+
+
+}
+
+header {
+    height: 80px;
+}
+.float-fix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:200;
+    line-height: 80px;
+}
+
+.main-color {
+    min-height: 500px;
+
+
+}
+
+
+#color-display {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 500px;
+    color: white;
+
+}
+.container-colors{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.square {
+    width: 30%;
+    margin: 1.66%;
+    padding-bottom: 30%;
+    float: left;
+    cursor: pointer;
+    background: inherit;
+}
+
+.test {
+    animation: shakeit 0.5s linear;
+
+}
+
+@keyframes shakeit {
+    0% {transform: translate(0) rotate(0);}
+    20% {transform: translate(2px, -2px) rotate(-2deg);}
+    40% {transform: translate(-1px, 3px) rotate(2deg);}
+    60%{transform: translate(3px, -2px) rotate(-2deg);}
+    80%{transform: translate(-2px, 3px) rotate(2deg);}
+    100% {transform: translate(0) rotate(0);}
+}
